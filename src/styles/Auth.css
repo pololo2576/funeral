@@ -1,0 +1,55 @@
+/* src/styles/Auth.css */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5ece3;
+}
+
+.auth-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: #4a2c2a;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.auth-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4a2c2a;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.auth-form .google-signin-btn {
+  background-color: #4a2c2a;/* Google Red */
+  margin-top: 10px;
+}
+
+.auth-form .message {
+  color: red;
+  margin-top: 10px;
+}

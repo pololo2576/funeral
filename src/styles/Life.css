@@ -1,0 +1,146 @@
+.life-page {
+  display: flex;
+  justify-content: center;
+  background-color: #f5ece3; /* Light brown background for the sides */
+}
+
+.life-container {
+  display: flex;
+  background-color: #fff; /* White background for the central content */
+  border-radius: 8px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.life-content {
+  flex: 2; /* Adjust the size of the main content area */
+  padding: 40px 60px; /* Adjust the padding to match the desired style */
+}
+
+.life-sidebar {
+  flex: 1; /* Adjust the size of the sidebar area */
+  padding: 20px;
+  background-color: #fff;
+}
+
+.diaporama-box {
+  margin-bottom: 20px;
+}
+
+.diaporama-box h3 {
+  font-size: 18px;
+  color: #4a2c2a;
+  margin-bottom: 10px;
+}
+
+.diaporama-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.updates-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.updates-box h3 {
+  font-size: 18px;
+  color: #4a2c2a;
+  margin-bottom: 10px;
+}
+
+.updates-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.updates-box ul li {
+  font-size: 16px;
+  color: #4a2c2a;
+  margin-bottom: 10px;
+}
+
+.updates-box .btn {
+  background-color: #4a2c2a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.updates-box .btn:hover {
+  background-color: #333;
+}
+
+.story {
+  position: relative;
+  background-color: #f5ece3;
+  padding: 20px; /* Increase padding */
+  border-radius: 10px; /* Add border-radius */
+  margin-bottom: 20px; /* Increase margin-bottom */
+}
+
+.story h2 {
+  font-size: 24px;
+  color: #3c1f1d;
+  font-style:open sans, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.story p {
+  font-size: 16px;
+  color: #3c1f1d;;
+  margin: 30px 0;
+}
+
+.story h3{
+  margin: 20px 0;
+}
+
+.new-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d9534f; /* Red background for "NEW" label */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .life-sidebar{
+    display: none;
+  }
+}
+
+.offline-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 16px;
+  border-bottom: 1px solid #e6b800;
+}
+
+.loading-message {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+iframe
+{
+    display: none;
+}

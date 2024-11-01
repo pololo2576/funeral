@@ -1,0 +1,11 @@
+/* src/styles/Footer.css */
+.footer {
+    background-color: #e6d3c4;
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+    color: #4a2c2a; /* Dark brown text color */
+    bottom: 0;
+    width: 100%;
+    font-size: 12px; /* Adjusted font size */
+  }
+  

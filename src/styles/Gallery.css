@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery-page {
+  display: flex;
+  justify-content: center;
+  background-color: #f5ece3; /* Light brown background for the sides */
+}
+
+.gallery-content-wrapper {
+  display: flex;
+  background-color: #fff; /* White background for the central content */
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.gallery-container {
+  background-color: #f5ece3; /* Light brown background */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gallery-header .btn {
+  background-color: #fff;
+  color: #4a2c2a;
+  border: 1px solid #4a2c2a;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-header .btn:hover {
+  background-color: #f5ece3;
+}
+
+.photos {
+  background-color: #f5ece3;
+  width: 100%;
+}
+
+.photos ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photos ul li {
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.photos ul li img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.photos ul li p {
+  font-size: 16px;
+  color: #4a2c2a;
+  margin: 10px 0;
+}
+
+.photos ul li .new-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.photo-form {
+  background-color: #e8c8b2;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.photo-form h2 {
+  font-size: 24px;
+  color: #4a2c2a;
+}
+
+.photo-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-form form div {
+  margin-bottom: 10px;
+}
+
+.photo-form form label {
+  font-size: 16px;
+  color: #4a2c2a;
+  margin-bottom: 5px;
+}
+
+.photo-form form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.photo-form .file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #3b444b;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.photo-form .file-upload label {
+  font-size: 14px;
+  color: #4a2c2a;
+  margin-top: 10px;
+}
+
+.photo-form .file-upload input {
+  display: none;
+}
+
+.photo-form .upload-btn {
+  background-color: #4a2c2a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.photo-form .add-from {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.photo-form .add-from .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.photo-form .add-from .google-photos {
+  background-color: #fff;
+  color: #4a2c2a;
+  border: 1px solid #4a2c2a;
+}
+
+.photo-form .add-from .facebook-photos {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.photo-form .subscription-info {
+  margin-top: 20px;
+  background-color: #f5ece3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.photo-form .subscription-info p {
+  margin: 0;
+  color: #4a2c2a;
+}
+
+.photo-form .subscription-info .view-plans {
+  color: #d9534f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.photo-form .subscription-info .view-plans:hover {
+  text-decoration: underline;
+}
+
+.gallery-sidebar {
+  background-color: #fff;
+  margin-left: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diaporama-box, .updates-box {
+  background-color: #f5ece3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.diaporama-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.updates-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.updates-box ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #4a2c2a;
+}
+
+.show-more-btn {
+  background-color: #4a2c2a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a2c2a;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.floating-btn .btn-text {
+  margin-left: 10px;
+}
+
+.photo-form.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.photo-form.fullscreen .return-btn {
+  background: none;
+  border: none;
+  color: #4a2c2a;
+  font-size: 20px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1300px) {
+  .photos ul li .new-label {
+    display: none;
+  }
+
+  .gallery-sidebar,
+  .photo-form {
+    display: none;
+  }
+
+  .gallery-page {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .gallery-header .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .gallery-header .btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-form.fullscreen {
+    padding: 0;
+  }
+}
+
+/* src/styles/Gallery.css */
+.photos ul li.selected {
+  border: 2px solid #d9534f; /* Highlight selected photo */
+}
+
+.loading-message {
+  font-size: 16px;
+  color: #4a2c2a;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.offline-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 16px;
+  border-bottom: 1px solid #e6b800;
+}
+
+iframe
+{
+    display: none;
+}
